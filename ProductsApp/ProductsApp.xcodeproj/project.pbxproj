@@ -7,6 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A19F94152836483300906F10 /* HomeTabViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A19F94142836483300906F10 /* HomeTabViewController.swift */; };
+		A19F941C28364AC100906F10 /* Poppins-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A19F941728364AC000906F10 /* Poppins-Light.ttf */; };
+		A19F941D28364AC100906F10 /* Poppins-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A19F941828364AC000906F10 /* Poppins-Bold.ttf */; };
+		A19F941E28364AC100906F10 /* Poppins-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A19F941928364AC100906F10 /* Poppins-Medium.ttf */; };
+		A19F941F28364AC100906F10 /* Poppins-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A19F941A28364AC100906F10 /* Poppins-Regular.ttf */; };
+		A19F942028364AC100906F10 /* Poppins-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A19F941B28364AC100906F10 /* Poppins-SemiBold.ttf */; };
+		A19F942328367E6200906F10 /* ProductCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A19F942228367E6200906F10 /* ProductCell.swift */; };
+		A19F94272836984700906F10 /* Cosmos in Frameworks */ = {isa = PBXBuildFile; productRef = A19F94262836984700906F10 /* Cosmos */; };
 		A1B582612835679D00C09F7A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1B582602835679D00C09F7A /* AppDelegate.swift */; };
 		A1B582632835679D00C09F7A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1B582622835679D00C09F7A /* SceneDelegate.swift */; };
 		A1B582682835679D00C09F7A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A1B582662835679D00C09F7A /* Main.storyboard */; };
@@ -36,6 +44,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		A19F94142836483300906F10 /* HomeTabViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTabViewController.swift; sourceTree = "<group>"; };
+		A19F941728364AC000906F10 /* Poppins-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-Light.ttf"; sourceTree = "<group>"; };
+		A19F941828364AC000906F10 /* Poppins-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-Bold.ttf"; sourceTree = "<group>"; };
+		A19F941928364AC100906F10 /* Poppins-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-Medium.ttf"; sourceTree = "<group>"; };
+		A19F941A28364AC100906F10 /* Poppins-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-Regular.ttf"; sourceTree = "<group>"; };
+		A19F941B28364AC100906F10 /* Poppins-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-SemiBold.ttf"; sourceTree = "<group>"; };
+		A19F942228367E6200906F10 /* ProductCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductCell.swift; sourceTree = "<group>"; };
 		A1B5825D2835679D00C09F7A /* ProductsApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ProductsApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A1B582602835679D00C09F7A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A1B582622835679D00C09F7A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -56,6 +71,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A19F94272836984700906F10 /* Cosmos in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -76,6 +92,26 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		A19F941628364AA000906F10 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				A19F941828364AC000906F10 /* Poppins-Bold.ttf */,
+				A19F941728364AC000906F10 /* Poppins-Light.ttf */,
+				A19F941928364AC100906F10 /* Poppins-Medium.ttf */,
+				A19F941A28364AC100906F10 /* Poppins-Regular.ttf */,
+				A19F941B28364AC100906F10 /* Poppins-SemiBold.ttf */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+		A19F942128367E2600906F10 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				A19F942228367E6200906F10 /* ProductCell.swift */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
 		A1B582542835679D00C09F7A = {
 			isa = PBXGroup;
 			children = (
@@ -99,6 +135,8 @@
 		A1B5825F2835679D00C09F7A /* ProductsApp */ = {
 			isa = PBXGroup;
 			children = (
+				A19F942128367E2600906F10 /* Cells */,
+				A19F941628364AA000906F10 /* Fonts */,
 				A1B5829228356C4100C09F7A /* Controllers */,
 				A1B582602835679D00C09F7A /* AppDelegate.swift */,
 				A1B582622835679D00C09F7A /* SceneDelegate.swift */,
@@ -131,6 +169,7 @@
 			isa = PBXGroup;
 			children = (
 				A1B5829028356A4C00C09F7A /* TabBarController.swift */,
+				A19F94142836483300906F10 /* HomeTabViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -151,6 +190,9 @@
 			dependencies = (
 			);
 			name = ProductsApp;
+			packageProductDependencies = (
+				A19F94262836984700906F10 /* Cosmos */,
+			);
 			productName = ProductsApp;
 			productReference = A1B5825D2835679D00C09F7A /* ProductsApp.app */;
 			productType = "com.apple.product-type.application";
@@ -223,6 +265,9 @@
 				Base,
 			);
 			mainGroup = A1B582542835679D00C09F7A;
+			packageReferences = (
+				A19F94252836984700906F10 /* XCRemoteSwiftPackageReference "Cosmos" */,
+			);
 			productRefGroup = A1B5825E2835679D00C09F7A /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -241,7 +286,12 @@
 			files = (
 				A1B5826D2835679E00C09F7A /* LaunchScreen.storyboard in Resources */,
 				A1B5826A2835679E00C09F7A /* Assets.xcassets in Resources */,
+				A19F941F28364AC100906F10 /* Poppins-Regular.ttf in Resources */,
+				A19F941D28364AC100906F10 /* Poppins-Bold.ttf in Resources */,
+				A19F941E28364AC100906F10 /* Poppins-Medium.ttf in Resources */,
+				A19F942028364AC100906F10 /* Poppins-SemiBold.ttf in Resources */,
 				A1B582682835679D00C09F7A /* Main.storyboard in Resources */,
+				A19F941C28364AC100906F10 /* Poppins-Light.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -267,6 +317,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				A1B5829128356A4C00C09F7A /* TabBarController.swift in Sources */,
+				A19F94152836483300906F10 /* HomeTabViewController.swift in Sources */,
+				A19F942328367E6200906F10 /* ProductCell.swift in Sources */,
 				A1B582612835679D00C09F7A /* AppDelegate.swift in Sources */,
 				A1B582632835679D00C09F7A /* SceneDelegate.swift in Sources */,
 			);
@@ -612,6 +664,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		A19F94252836984700906F10 /* XCRemoteSwiftPackageReference "Cosmos" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/evgenyneu/Cosmos.git";
+			requirement = {
+				kind = exactVersion;
+				version = 23.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		A19F94262836984700906F10 /* Cosmos */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = A19F94252836984700906F10 /* XCRemoteSwiftPackageReference "Cosmos" */;
+			productName = Cosmos;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = A1B582552835679D00C09F7A /* Project object */;
 }
