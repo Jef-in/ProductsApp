@@ -397,9 +397,9 @@
                                         </tableViewCellContentView>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <connections>
-                                            <outlet property="descriptionLabel" destination="oeH-Wy-JlF" id="F8n-BC-f9U"/>
                                             <outlet property="priceLabel" destination="b3m-QI-Ija" id="Nx3-Ea-bnf"/>
                                             <outlet property="productImage" destination="b9m-gF-sTS" id="X4c-Vu-L6K"/>
+                                            <outlet property="productTitleLabel" destination="oeH-Wy-JlF" id="c8q-94-Pxs"/>
                                             <outlet property="productView" destination="jAe-jT-4Gj" id="ASA-yf-hvg"/>
                                             <outlet property="ratingLabel" destination="1qB-Gl-Yi6" id="Hmz-39-hCx"/>
                                             <outlet property="ratingView" destination="u3S-1r-etK" id="vDI-8K-pDJ"/>

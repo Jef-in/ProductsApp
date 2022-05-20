@@ -28,6 +28,8 @@
 		A1B582842835679E00C09F7A /* ProductsAppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1B582832835679E00C09F7A /* ProductsAppUITestsLaunchTests.swift */; };
 		A1B5829128356A4C00C09F7A /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1B5829028356A4C00C09F7A /* TabBarController.swift */; };
 		A1E89ECD2837FEC5005BC953 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1E89ECC2837FEC5005BC953 /* Constants.swift */; };
+		A1E89ED028380093005BC953 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1E89ECF28380093005BC953 /* HomeViewModel.swift */; };
+		A1E89ED228381C6E005BC953 /* UIImageView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1E89ED128381C6E005BC953 /* UIImageView+Extensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -72,6 +74,8 @@
 		A1B582832835679E00C09F7A /* ProductsAppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductsAppUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		A1B5829028356A4C00C09F7A /* TabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
 		A1E89ECC2837FEC5005BC953 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		A1E89ECF28380093005BC953 /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
+		A1E89ED128381C6E005BC953 /* UIImageView+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImageView+Extensions.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -159,6 +163,7 @@
 		A1B5825F2835679D00C09F7A /* ProductsApp */ = {
 			isa = PBXGroup;
 			children = (
+				A1E89ECE2838007F005BC953 /* ViewModels */,
 				A1E89ECB2837FEAD005BC953 /* Helpers */,
 				A11EB6102837F2E00006BD50 /* Services */,
 				A11EB60D2837F22C0006BD50 /* Models */,
@@ -206,8 +211,17 @@
 			isa = PBXGroup;
 			children = (
 				A1E89ECC2837FEC5005BC953 /* Constants.swift */,
+				A1E89ED128381C6E005BC953 /* UIImageView+Extensions.swift */,
 			);
 			path = Helpers;
+			sourceTree = "<group>";
+		};
+		A1E89ECE2838007F005BC953 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				A1E89ECF28380093005BC953 /* HomeViewModel.swift */,
+			);
+			path = ViewModels;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -354,7 +368,9 @@
 			files = (
 				A1B5829128356A4C00C09F7A /* TabBarController.swift in Sources */,
 				A11EB6122837F2F40006BD50 /* ProductService.swift in Sources */,
+				A1E89ED228381C6E005BC953 /* UIImageView+Extensions.swift in Sources */,
 				A19F94152836483300906F10 /* HomeTabViewController.swift in Sources */,
+				A1E89ED028380093005BC953 /* HomeViewModel.swift in Sources */,
 				A19F942328367E6200906F10 /* ProductCell.swift in Sources */,
 				A11EB60C2837C3270006BD50 /* ProductDetailsViewController.swift in Sources */,
 				A1B582612835679D00C09F7A /* AppDelegate.swift in Sources */,
