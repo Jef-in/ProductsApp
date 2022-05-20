@@ -17,11 +17,11 @@ class HomeTabViewController: UIViewController {
         buildView()
     }
     
-    func buildView() {
+    private func buildView() {
         configureSearchView()
     }
     
-    func configureSearchView() {
+    private func configureSearchView() {
         searchView.layer.borderColor = UIColor(red: 0.878, green: 0.878, blue: 0.878, alpha: 1).cgColor
         searchView.layer.borderWidth = 1.0
         searchView.layer.cornerRadius = 10.0
@@ -39,5 +39,9 @@ extension HomeTabViewController: UITableViewDelegate, UITableViewDataSource {
         return cell
     }
     
-    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let storyBoard = UIStoryboard.init(name: "Main", bundle: nil)
+        let controller = storyBoard.instantiateViewController(withIdentifier: "ProductDetails") as! ProductDetailsViewController
+        navigationController?.pushViewController(controller, animated: true)
+    }
 }

@@ -17,6 +17,7 @@ class TabBarController: UITabBarController {
     func configureTabBarView() {
        tabBar.frame = CGRect(x: 0, y: 0, width: 375, height: 95)
        tabBar.layer.cornerRadius = 12.0
+       tabBar.layer.maskedCorners = [.layerMaxXMinYCorner, .layerMinXMinYCorner]
        tabBar.layer.masksToBounds = true
     }
 }

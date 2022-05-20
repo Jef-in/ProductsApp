@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A11EB60C2837C3270006BD50 /* ProductDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A11EB60B2837C3270006BD50 /* ProductDetailsViewController.swift */; };
 		A19F94152836483300906F10 /* HomeTabViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A19F94142836483300906F10 /* HomeTabViewController.swift */; };
 		A19F941C28364AC100906F10 /* Poppins-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A19F941728364AC000906F10 /* Poppins-Light.ttf */; };
 		A19F941D28364AC100906F10 /* Poppins-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A19F941828364AC000906F10 /* Poppins-Bold.ttf */; };
@@ -44,6 +45,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		A11EB60B2837C3270006BD50 /* ProductDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductDetailsViewController.swift; sourceTree = "<group>"; };
 		A19F94142836483300906F10 /* HomeTabViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTabViewController.swift; sourceTree = "<group>"; };
 		A19F941728364AC000906F10 /* Poppins-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-Light.ttf"; sourceTree = "<group>"; };
 		A19F941828364AC000906F10 /* Poppins-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-Bold.ttf"; sourceTree = "<group>"; };
@@ -170,6 +172,7 @@
 			children = (
 				A1B5829028356A4C00C09F7A /* TabBarController.swift */,
 				A19F94142836483300906F10 /* HomeTabViewController.swift */,
+				A11EB60B2837C3270006BD50 /* ProductDetailsViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -319,6 +322,7 @@
 				A1B5829128356A4C00C09F7A /* TabBarController.swift in Sources */,
 				A19F94152836483300906F10 /* HomeTabViewController.swift in Sources */,
 				A19F942328367E6200906F10 /* ProductCell.swift in Sources */,
+				A11EB60C2837C3270006BD50 /* ProductDetailsViewController.swift in Sources */,
 				A1B582612835679D00C09F7A /* AppDelegate.swift in Sources */,
 				A1B582632835679D00C09F7A /* SceneDelegate.swift in Sources */,
 			);
