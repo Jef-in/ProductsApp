@@ -11,7 +11,7 @@ import UIKit
 class HomeTabViewController: UIViewController {
     @IBOutlet weak var searchView: UIView!
     @IBOutlet weak var productTable: UITableView!
-    
+
     private let viewModel: HomeViewable
     var products = [Product]()
     var cancellables = Set<AnyCancellable>()
@@ -80,7 +80,9 @@ extension HomeTabViewController: UITableViewDelegate, UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let storyBoard = UIStoryboard.init(name: "Main", bundle: nil)
+        let viewModel = ProductDetailViewModel(product: products[indexPath.row])
         let controller = storyBoard.instantiateViewController(withIdentifier: "ProductDetails") as! ProductDetailsViewController
+        controller.viewModel = viewModel
         navigationController?.pushViewController(controller, animated: true)
     }
 }

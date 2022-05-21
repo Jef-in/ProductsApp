@@ -60,7 +60,7 @@
         <scene sceneID="Qpg-6n-gJW">
             <objects>
                 <viewController storyboardIdentifier="ProductDetails" id="xkG-07-fDY" customClass="ProductDetailsViewController" customModule="ProductsApp" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="wZD-X8-2an">
+                    <view key="view" contentMode="scaleAspectFit" id="wZD-X8-2an">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
@@ -100,8 +100,9 @@
                                         <color key="textColor" red="0.0" green="0.023529411764705882" blue="0.039215686274509803" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Stay Gallant" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IJr-8G-TzM">
-                                        <rect key="frame" x="23" y="43" width="125" height="28"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Stay Gallant" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IJr-8G-TzM">
+                                        <rect key="frame" x="23" y="43" width="371" height="28"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <fontDescription key="fontDescription" name="Poppins-SemiBold" family="Poppins" pointSize="20"/>
                                         <color key="textColor" red="0.0" green="0.023529411764705882" blue="0.039215686274509803" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
@@ -145,6 +146,7 @@
                                     <constraint firstItem="KkT-lZ-ZNz" firstAttribute="top" secondItem="yyO-A1-eHC" secondAttribute="bottom" constant="24" id="AXb-zW-MRN"/>
                                     <constraint firstItem="kkb-is-xjC" firstAttribute="centerY" secondItem="yyO-A1-eHC" secondAttribute="centerY" multiplier="1:1.02" id="BhI-p2-dRT"/>
                                     <constraint firstItem="0iC-cz-dYP" firstAttribute="leading" secondItem="DpM-RK-J1r" secondAttribute="leading" constant="23" id="EuS-GK-zlH"/>
+                                    <constraint firstItem="IJr-8G-TzM" firstAttribute="trailing" secondItem="KkT-lZ-ZNz" secondAttribute="trailing" id="GDE-S7-0VG"/>
                                     <constraint firstItem="Aqc-Hu-Xui" firstAttribute="top" secondItem="DpM-RK-J1r" secondAttribute="top" constant="25" id="Mru-Yn-uZf"/>
                                     <constraint firstItem="yyO-A1-eHC" firstAttribute="top" secondItem="IJr-8G-TzM" secondAttribute="bottom" constant="8" id="QpD-7h-LgQ"/>
                                     <constraint firstItem="KkT-lZ-ZNz" firstAttribute="height" secondItem="DpM-RK-J1r" secondAttribute="height" multiplier="0.36" id="eev-ej-dX6"/>
@@ -202,6 +204,7 @@
                             </button>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="TShirt" translatesAutoresizingMaskIntoConstraints="NO" id="mfx-op-VCb">
                                 <rect key="frame" x="68.5" y="87" width="277" height="354"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="GLH-Gy-jGj"/>
@@ -237,6 +240,7 @@
                         <outlet property="favouritesImage" destination="t6T-Jl-KbU" id="psU-is-Sgl"/>
                         <outlet property="favouritesView" destination="L7P-Wt-hRT" id="hlH-9a-gBy"/>
                         <outlet property="priceLabel" destination="0iC-cz-dYP" id="tBO-qR-NqL"/>
+                        <outlet property="productImageView" destination="mfx-op-VCb" id="4J0-ER-GTK"/>
                         <outlet property="productNameLabel" destination="IJr-8G-TzM" id="ouO-qX-4Gb"/>
                         <outlet property="ratingValueLabel" destination="kkb-is-xjC" id="934-wv-a5P"/>
                         <outlet property="ratingView" destination="yyO-A1-eHC" id="pIY-wi-TN6"/>

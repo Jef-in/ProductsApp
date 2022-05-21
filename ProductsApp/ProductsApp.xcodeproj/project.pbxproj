@@ -30,6 +30,7 @@
 		A1E89ECD2837FEC5005BC953 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1E89ECC2837FEC5005BC953 /* Constants.swift */; };
 		A1E89ED028380093005BC953 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1E89ECF28380093005BC953 /* HomeViewModel.swift */; };
 		A1E89ED228381C6E005BC953 /* UIImageView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1E89ED128381C6E005BC953 /* UIImageView+Extensions.swift */; };
+		A1E89ED4283821B3005BC953 /* ProductDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1E89ED3283821B3005BC953 /* ProductDetailViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -76,6 +77,7 @@
 		A1E89ECC2837FEC5005BC953 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		A1E89ECF28380093005BC953 /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
 		A1E89ED128381C6E005BC953 /* UIImageView+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImageView+Extensions.swift"; sourceTree = "<group>"; };
+		A1E89ED3283821B3005BC953 /* ProductDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductDetailViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -220,6 +222,7 @@
 			isa = PBXGroup;
 			children = (
 				A1E89ECF28380093005BC953 /* HomeViewModel.swift */,
+				A1E89ED3283821B3005BC953 /* ProductDetailViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -377,6 +380,7 @@
 				A11EB60F2837F2400006BD50 /* ProductModel.swift in Sources */,
 				A1B582632835679D00C09F7A /* SceneDelegate.swift in Sources */,
 				A1E89ECD2837FEC5005BC953 /* Constants.swift in Sources */,
+				A1E89ED4283821B3005BC953 /* ProductDetailViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
