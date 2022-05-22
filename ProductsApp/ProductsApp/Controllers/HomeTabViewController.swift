@@ -16,14 +16,14 @@ class HomeTabViewController: UIViewController {
     @IBOutlet weak var searchTextField: UITextField!
 
     private let viewModel: HomeViewable
-    private let networkManager: NetworkManager
+    private let networkManager: NetworkManageable
     var products = [Product]()
     var searchedProducts = [Product]()
     var isSearch: Bool = false
     var cancellables = Set<AnyCancellable>()
     
     init(viewModel: HomeViewable,
-         networkManager: NetworkManager) {
+         networkManager: NetworkManageable) {
         self.viewModel = viewModel
         self.networkManager = networkManager
         super.init(nibName: nil, bundle: nil)
@@ -153,7 +153,7 @@ extension HomeTabViewController: UITableViewDelegate, UITableViewDataSource {
     }
 }
 
-extension HomeTabViewController: NetworkManageable {
+extension HomeTabViewController: NetworkObserveable {
     func statusDidChange(status: NWPath.Status) {
         showNetworkConnectivityView(networkManager.currentStatus == .satisfied)
     }

@@ -186,7 +186,7 @@
                                         </constraints>
                                     </imageView>
                                 </subviews>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstItem="t6T-Jl-KbU" firstAttribute="centerY" secondItem="L7P-Wt-hRT" secondAttribute="centerY" id="4vq-VA-Ve5"/>
                                     <constraint firstAttribute="width" constant="44.5" id="EeR-ry-X0E"/>
@@ -253,7 +253,7 @@
         <!--Home Tab View Controller-->
         <scene sceneID="tO7-gz-YzG">
             <objects>
-                <viewController id="BCa-vP-wSX" customClass="HomeTabViewController" customModule="ProductsApp" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="HomeTabViewController" id="BCa-vP-wSX" customClass="HomeTabViewController" customModule="ProductsApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="48g-rI-gPa">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -489,8 +489,20 @@
                     <view key="view" contentMode="scaleToFill" id="lck-f2-nZE">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Favourites Screen" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0W9-DL-KD9">
+                                <rect key="frame" x="145" y="418.5" width="124.5" height="20"/>
+                                <fontDescription key="fontDescription" name="Poppins-Regular" family="Poppins" pointSize="14"/>
+                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="Myq-zf-Z1W"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" red="0.98431372549019602" green="0.98431372549019602" blue="0.99215686274509807" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="0W9-DL-KD9" firstAttribute="centerX" secondItem="Myq-zf-Z1W" secondAttribute="centerX" id="Kq5-Wp-k1e"/>
+                            <constraint firstItem="0W9-DL-KD9" firstAttribute="centerY" secondItem="Myq-zf-Z1W" secondAttribute="centerY" id="LcE-Lf-qDY"/>
+                        </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="" image="Favourite" id="i2y-N4-McV"/>
                 </viewController>
@@ -505,8 +517,20 @@
                     <view key="view" contentMode="scaleToFill" id="Px7-0B-EKM">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Cart Screen" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="s5d-Ie-fae">
+                                <rect key="frame" x="165.5" y="418.5" width="83" height="20"/>
+                                <fontDescription key="fontDescription" name="Poppins-Regular" family="Poppins" pointSize="14"/>
+                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="PpC-mK-QOM"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" red="0.98431372549019602" green="0.98431372549019602" blue="0.99215686274509807" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="s5d-Ie-fae" firstAttribute="centerY" secondItem="PpC-mK-QOM" secondAttribute="centerY" id="Agd-NV-6Zc"/>
+                            <constraint firstItem="s5d-Ie-fae" firstAttribute="centerX" secondItem="PpC-mK-QOM" secondAttribute="centerX" id="erq-Yf-J7Y"/>
+                        </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="" image="Cart" id="6ST-H9-zBE"/>
                 </viewController>
@@ -521,8 +545,17 @@
                     <view key="view" contentMode="scaleToFill" id="bsE-6o-1yA">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Profile Screen" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="820-dR-kDf">
+                                <rect key="frame" x="144" y="438" width="95" height="20"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Poppins-Regular" family="Poppins" pointSize="14"/>
+                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="Xf3-Om-oT9"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" red="0.98431372549019602" green="0.98431372549019602" blue="0.99215686274509807" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="" image="Profile" id="rsf-Qj-8xo"/>
                 </viewController>

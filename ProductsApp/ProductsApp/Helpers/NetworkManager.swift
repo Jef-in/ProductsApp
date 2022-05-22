@@ -8,15 +8,22 @@
 import Combine
 import Network
 
-protocol NetworkManageable: AnyObject{
+public protocol NetworkObserveable: AnyObject{
     func statusDidChange(status: NWPath.Status)
 }
 
-struct NetworkChangeObservation {
-    weak var observer: NetworkManageable?
+public protocol NetworkManageable {
+    func startMonitoring()
+    func stopMonitoring()
+    func addObserver(observer: NetworkObserveable)
+    var currentStatus: NWPath.Status { get }
 }
 
-final class NetworkManager {
+struct NetworkChangeObservation {
+    weak var observer: NetworkObserveable?
+}
+
+class NetworkManager: NetworkManageable {
     static let shared = NetworkManager()
     private let queue = DispatchQueue.global()
     private let monitor: NWPathMonitor
@@ -56,12 +63,12 @@ final class NetworkManager {
         monitor.cancel()
     }
     
-    func addObserver(observer: NetworkManageable) {
+    public func addObserver(observer: NetworkObserveable) {
            let id = ObjectIdentifier(observer)
            observations[id] = NetworkChangeObservation(observer: observer)
        }
 
-       func removeObserver(observer: NetworkManageable) {
+       func removeObserver(observer: NetworkObserveable) {
            let id = ObjectIdentifier(observer)
            observations.removeValue(forKey: id)
        }

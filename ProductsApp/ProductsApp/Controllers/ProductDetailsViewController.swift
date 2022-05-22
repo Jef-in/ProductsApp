@@ -57,6 +57,12 @@ class ProductDetailsViewController: UIViewController {
     }
     
     @IBAction func favouritesButtonPressed(_ sender: Any) {
-
+        guard let image = UIImage(named: "Favourite-Filled") else { return }
+        guard let favourite = favouritesImage.image else { return }
+        if favourite.isEqualToImage(image: image) {
+            favouritesImage.image = UIImage(named: "Favourite")
+        } else {
+            favouritesImage.image = UIImage(named: "Favourite-Filled")
+        }
     }
 }
